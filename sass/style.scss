@@ -1,0 +1,171 @@
+$font-logo: 'Over the Rainbow', cursive, sans-serif;
+$font-upper: 'Mukta', sans-serif;
+$font-text: 'Quicksand', sans-serif;
+$color-gold: rgb(230, 234, 0);
+$color-light: #fff;
+$color-muted: rgb(145, 145, 145);
+
+*, *::before *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+//*Splash-nav*//
+
+nav {
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+}
+
+nav li {
+  list-style-type: none;
+  color: $color-light
+}
+
+.brand {
+  text-decoration: none;
+  color: $color-gold;
+  font-family: $font-logo;
+  font-size: 25px;
+}
+
+.navig {
+  font-family: $font-upper;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+.splash {
+  text-align: center;
+  align-items: center;
+  margin: 200px 0 50px 0;
+  height: 100%;
+}
+
+.splash h1 {
+  font-size: 50px;
+  font-family: $font-text;
+  color: $color-light;
+}
+
+button {
+  border-radius: 5px;
+  border-color:$color-gold;
+  background-color: $color-gold;
+  color: $color-light;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.splash h2 {
+  font-size: 70px;
+  font-family: $font-upper;
+  text-transform: uppercase;
+  color: $color-light;
+}
+
+//*Services*//
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: $font-upper;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+.subtitle {
+  font-size: 25px;
+  font-family: $font-text;
+  text-align: center;
+  color:$color-muted;
+  margin: 0 0 50px 0;
+}
+
+.col-md-4 .row {
+  justify-content: center;
+}
+
+.col-md-4 i {
+  font-size: 30px;
+  border-radius: 50%;
+  border: 5px solid $color-gold;
+  color: $color-gold;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.col-md-4 p {
+  font-family: $font-text;
+  font-size: 15px;
+  text-align: center;
+}
+
+.under-img {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+//*Portfolio*//
+.portfolio {
+      background-color: rgb(232, 232, 232);
+}
+.image {
+  padding: 0 30px;
+  background-color: $color-light;
+  margin: 30px auto;
+  padding: 0px;
+}
+.gallery {
+  margin: 0;
+}
+.image img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+.description {
+  font-family: $font-text;
+  text-align: center;
+  width: 100%;
+}
+
+.description h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.description p {
+  font-size: 15px;
+  margin-top: 0;
+  color: $color-muted;
+}
+
+//*Footer*//
+
+footer li {
+  text-decoration: none;
+  font-size: 0;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 5px;
+}
+footer i {
+  font-size: 30px;
+  color: $color-light;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+}
+footer .col-4 p {
+  margin: 50px 0 0 0;
+}
