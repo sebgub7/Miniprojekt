@@ -18,11 +18,12 @@ nav {
   background-image: url(https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   background-position: center center;
+  padding-top: 30px;
 }
 
-nav li {
-  list-style-type: none;
-  color: $color-light
+nav li a {
+  color: $color-light;
+  text-decoration: none;
 }
 
 .brand {
@@ -32,12 +33,17 @@ nav li {
   font-size: 25px;
 }
 
+nav li {
+  list-style-type: none;
+}
+
 .navig {
   font-family: $font-upper;
   font-size: 15px;
   text-align: center;
   align-items: center;
   height: 100%;
+  justify-content: flex-end;
 }
 .splash {
   text-align: center;
@@ -71,12 +77,15 @@ button {
 
 //*Services*//
 
+.services {
+  padding: 70px 0;
+}
 .main-title {
   text-transform: uppercase;
   font-size: 50px;
   font-family: $font-upper;
   text-align: center;
-  margin: 50px 0 0 0;
+  margin: 0;
 }
 .subtitle {
   font-size: 25px;
@@ -113,6 +122,7 @@ button {
 //*Portfolio*//
 .portfolio {
       background-color: rgb(232, 232, 232);
+      padding-top: 30px;
 }
 .image {
   padding: 0 30px;
@@ -168,4 +178,24 @@ footer i {
 }
 footer .col-4 p {
   margin: 50px 0 0 0;
+}
+//*media*//
+
+@media (max-width: 768px) {
+  .navig {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+    .splash h1 {
+      font-size: 30px;
+    }
+
+    button {
+      font-size: 20px;
+    }
+
+    .splash h2 {
+      font-size: 50px;
+  }
 }
