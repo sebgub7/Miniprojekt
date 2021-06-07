@@ -21,7 +21,7 @@ nav {
   padding-top: 30px;
 }
 
-nav li a {
+nav a {
   color: $color-light;
   text-decoration: none;
 }
@@ -31,10 +31,6 @@ nav li a {
   color: $color-gold;
   font-family: $font-logo;
   font-size: 25px;
-}
-
-nav li {
-  list-style-type: none;
 }
 
 .navig {
@@ -127,7 +123,7 @@ button {
 .image {
   padding: 0 30px;
   background-color: $color-light;
-  margin: 30px auto;
+  margin: 30px 20px;
   padding: 0px;
 }
 .gallery {
@@ -176,8 +172,9 @@ footer i {
   top: 15px;
   left: 17px;
 }
-footer .col-4 p {
-  margin: 50px 0 0 0;
+footer .col-md-4 {
+  align-items: center;
+  display: flex;
 }
 //*media*//
 
